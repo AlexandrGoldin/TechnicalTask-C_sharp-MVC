@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - TechnicalTask_C_sharp_MVC</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="row margin-0">
+                    <div class="navbar navbar-expand-md navbar-toggleable-md navbar-dark bg-dark border-bottom box-shadow mb-3" role="navigation">
+                        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                            <img src="~/img/logo2res.png" title="core" alt="">VENDISTA
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="navbar-collapse collapse d-md-inline-flex flex-md-row-reverse">
+                            <ul class="navbar-nav text-light me-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">
+                                        Личный кабинет-Отправка команды на терминал
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="navbar-collapse collapse d-md-inline-flex flex-md-row-reverse">
+                            <ul class="navbar-nav text-light ms-auto">
+                                <li class="nav-item-1">
+                                    <a href="~/Home/CarsSelect" class="nav-link text-light ">Партнер</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row margin-01">
+                    <div class="col-3 padding-0">
+                        <div class="sidebar">
+                            <ul class="list-unstyled components">
+                                <li>
+                                    <a href="#">
+                                        <img src="~/img/logoRes.png" title="core" alt="">
+                                        Клиенты
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="~/img/logoRes.png" title="core" alt="">
+                                        Пользователи
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <img src="~/img/logoRes.png" title="core" alt="">
+                                        Терминалы
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="~/img/logoRes.png" title="core" alt="">
+                                        TID Банка
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="~/img/logoRes.png" title="core" alt="">
+                                        Транзакции
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="~/img/logoRes.png" title="core" alt="">
+                                        Логи терминалов
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="~/img/logoRes.png" title="core" alt="">
+                                        Кассы
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="~/img/logoRes.png" title="core" alt="" class="Last-img">
+                                        Привязать терминалы к клиенту списком
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                        <div class="col-9 padding-01">
+                            <div class="title">
+                                <a>Отправка команды на терминал</a>
+                            </div>
+                            <main role="main" class="pb-3">
+                                @RenderBody()
+                            </main>
+                        </div>
+                    </div>
+                </div>
+        </nav>
+    </header> 
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        @RenderSection("Scripts", required: false)
+</body>
+</html>

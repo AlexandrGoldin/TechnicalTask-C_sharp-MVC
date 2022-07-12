@@ -1,0 +1,312 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+.container {
+    background: #F8F8FF;
+    width: 1025px;
+    margin-top: 0 !important;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.navbar {
+    width: 1025px !important;
+    margin-left: auto;
+    margin-right: auto;
+    height: 70px;
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+}
+
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+a.navbar-brand img {
+     background-image: url('file:///C:\Users\Александр\Desktop\logo3res.png');
+     margin-left: 30px !important;
+}
+
+.margin-0 {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+    row-gap: 0;
+}
+
+.margin-01 {
+    height: 890px;
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+    row-gap: 0;
+}
+
+.padding-0 {
+    background: #F8F8FF;
+    padding-right: 0;
+    padding-left: 0;
+    margin-top: 0 !important;
+    padding-top: !important;
+    
+}
+
+.padding-01 {
+    background: #F0F8FF;
+    border-left: 3px solid #D3D3D3;
+    padding-right: 0;
+    padding-left: 0;
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+
+.sidebar li {
+    padding-left: 5px;
+    padding-bottom: 30px;
+}
+
+.sidebar a {
+    padding-left: 0;
+    color: #000000;
+    font-weight: 600;
+}
+
+/*.span #last-text {
+    font-weight: 600;
+    padding-top: 0 ;
+    margin-left: 45px ;
+}*/
+
+/*.sidebar li last-string {
+    font-weight: 600;
+    padding-top: 0;
+    margin-left: 45px;
+}*/
+
+
+.sidebar Last-list Last-text {
+    padding-left: 30px;
+    margin-left: 30px;
+}
+
+.title {
+    font-weight: 600;
+    padding-left: 22px;
+    padding-top: 15px;
+}
+
+/*view GetCommandList
+--------------------------------------------------*/
+.dropdown-row-0 {
+    height: 370px;
+    width:730px;
+    background: #ebedf0;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.padding-dropdown-1 { 
+    padding-left: 3px !important;
+   
+}
+
+.padding-dropdown-0 {
+    padding-right: 3px !important;
+    -ms-flex: 0 0 45%;
+    flex: 0 0 45%;
+    max-width: 45%;
+}
+
+@media (min-width: 750px) {
+    .padding-dropdown-0 {
+        -ms-flex: 0 0 45%;
+        flex: 0 0 45%;
+        max-width: 45%;
+    }
+}
+
+.padding-dropdown-0 label {
+    font-weight: 600;
+}
+
+.padding-dropdown-0 input {
+    height: 330px;
+}
+
+.colortext {
+    background-color: white !important;
+}
+
+.padding-dropdown-1 label {
+    font-weight: 600;
+    padding-left: 20px;
+}
+
+.padding-dropdown-1 select {
+    font-size: 15px;
+}
+
+.padding-dropdown-1 option {
+    font-size: 11px;
+    font-weight: 700;
+}
+
+#dropdown {
+    width: 390px !important;
+}
+
+.dropdown-row-1 {
+    height: 100px;
+    width: 730px;
+    background: #ebedf0;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.padding-buton-0{
+    padding-right:2px !important;
+}
+
+.padding-buton-1 {
+    padding-left: 2px !important;
+}
+
+.padding-buton-1 a input[type=button] {
+    color: white;
+    background-color: #C0C0C0;
+    margin-top: 30px;
+}
+.button-0 {
+    float: right;
+    margin-right: 10px;
+    width: 150px;
+}
+
+.button-1 {
+    width: 150px;
+}
+
+.button-1[type=submit] {
+    color: white;
+    background-color: #3CB371;
+    margin-top:30px;
+}
+
+.padding-dropdown-0 input {
+    font-weight: 700;
+    padding-bottom: 300px;
+}
+
+/*Styles for CreateCommand
+-----------------------------------------------*/
+
+.dropdown-row-01 {
+    height: 100px;
+    width: 730px;
+    background: #ebedf0;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+/*Styles for table-blok
+-------------------------------------------------*/
+.row-table-0 {
+    height: 337px;
+    width: 730px;
+}
+
+.col-table table {
+    margin-left: 10px !important;
+    margin-top: 17px !important;
+    width: 730px;
+}
+
+.table tr th {
+    text-align: center;
+    vertical-align: middle;
+    /*width: 20%;*/
+}
+
+.table tr th {
+    font-size: 12px;
+    font-weight: 400;
+    height: 70px;
+}
+
+.table tr td {
+    font-size: 12px;
+    font-weight: 600;
+    height: 43px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.table tr td {
+    text-align:center;
+    vertical-align: middle;
+}
+
+.Number {
+    width: 40px;
+}
+
+.DateTime {
+    width: 80px;
+}
+
+.Command {
+    width: 250px;
+}
+
+.Parametr1 {
+    width: 60px;
+}
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    font-size: 14px;
+}
+@media /*(min-width: 768px)*/ {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}

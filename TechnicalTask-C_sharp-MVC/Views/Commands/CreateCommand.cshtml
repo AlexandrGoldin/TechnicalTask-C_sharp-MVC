@@ -1,0 +1,78 @@
+﻿@using TechnicalTask_C_sharp_MVC.Models
+@model Item
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{
+    ViewData["Title"] = "CreateCommand";
+}
+<html>
+<body>
+    <form method="post" id="MyForm" asp-action="CreateCommand" asp-controller="Commands">
+        <div class="form-row dropdown-row-0">
+            <div class="col padding-dropdown-0">
+                <input name="commandId" type="hidden" asp-for="@Model.Command_id" />
+                <label for="terminalId" class="control-label">ID Tерминала(ов)</label>
+                <input name="terminalId" type="text" class="form-control colortext" readonly id="terminalId" value="@Model.Terminal_id" />
+            </div>
+            <div class="col padding-dropdown-1">
+                <label asp-for="Id" class="control-label">Команда</label>
+                <input name="strParameter1" type="text" class="form-control colortext" readonly id="terminalId" value="@Model.Str_parameter1" />
+            </div>
+        </div>
+        <div class="form-row dropdown-row-01">
+            <div class="col-12 padding-buton-01">
+                <label asp-for="Parameter1" class="control-label">Сумма кредита(в копейках)</label>
+                <input name="parameter1" type="number" class="form-control text"  id="terminalId" value="@Model.Parameter1" />
+            </div>
+         </div>
+        <div class="form-row dropdown-row-1">
+            <div class="col-6 padding-buton-1">
+                <a href="~/Commands/GetCommandList">
+                    <input type="button" class="btn button-0" value=" Назад" />
+                </a>
+            </div>
+            <div class="col-6 padding-buton-1">
+                <button class="btn button-1" id="txtresults" type="submit">Отправить</button>
+            </div>
+        </div>
+    </form>
+    <div class="row row-table-0">
+        <div class="col-12 col-table">
+            <table class="table table-striped">
+                <thead class="thead-dark">
+                    <tr>
+                        <th class="Number"> № </th>
+                        <th class="DateTime"> Дата и время</th>
+                        <th class="Command"> Команда</th>
+                        <th class="Parametr1"> Параметр 1</th>
+                        <th class="Parametr1"> Параметр 2 </th>
+                        <th class="Parametr1"> Параметр 3 </th>
+                        <th class="Status"> Статус</th>
+                    </tr>
+                </thead>
+                <tbode>
+                    @{
+                        int i = 1;
+                    }
+
+                    @foreach (var item in ViewBag.Items)
+                    {
+                        <tr>
+                            <td>@(i++)</td>
+                            <td>@item.Time_created</td>
+                            <td>@item.Str_parameter1</td>
+                            <td>@item.Parameter1</td>
+                            <td>@item.Parameter2</td>
+                            <td>@item.Parameter3</td>
+                            <td>@item.State_name</td>
+                        </tr>
+                    }
+                </tbode>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
