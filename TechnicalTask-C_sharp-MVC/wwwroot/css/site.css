@@ -21,13 +21,15 @@ for details on configuring this project to bundle and minify static web assets. 
 
 a.navbar-brand {
     white-space: normal;
-    text-align: center;
+    text-align: left;
     word-break: break-all;
+    font-size: 12px;
+    font-weight: 500;
 }
 
 a.navbar-brand img {
      background-image: url('file:///C:\Users\Александр\Desktop\logo3res.png');
-     margin-left: 30px !important;
+     margin-left: 0!important;
 }
 
 .margin-0 {
@@ -48,8 +50,7 @@ a.navbar-brand img {
     padding-right: 0;
     padding-left: 0;
     margin-top: 0 !important;
-    padding-top: !important;
-    
+    padding-top: !important;    
 }
 
 .padding-01 {
@@ -57,38 +58,55 @@ a.navbar-brand img {
     border-left: 3px solid #D3D3D3;
     padding-right: 0;
     padding-left: 0;
-    padding-top: 0 !important;
-    margin-top: 0 !important;
+    padding-top:15px;    
 }
 
-.sidebar li {
-    padding-left: 5px;
-    padding-bottom: 30px;
+.padding-01 a{
+   padding-left:15px;
+   font-weight:500;
 }
 
-.sidebar a {
-    padding-left: 0;
-    color: #000000;
-    font-weight: 600;
+/* sidebar style 
+----------------------------------------------------------*/
+
+.sidebar row {
+    height:890px;
 }
 
-
-.sidebar Last-list Last-text {
-    padding-left: 30px;
-    margin-left: 30px;
-}
-
-.title {
-    font-weight: 600;
-    padding-left: 22px;
+.col-sidebar1 {
+    padding-left: 0 !important;
     padding-top: 15px;
+}
+
+.col-sidebar1 li{
+   padding-bottom:28px;
+   padding-left: 5px;
+}
+
+.last-img {
+    padding-bottom:40px!important;
+}
+
+.col-sidebar2 {
+    padding-left: 0 !important;
+    padding-right: 40px;
+    padding-top: 20px;
+}
+
+.col-sidebar2 li {
+   padding-bottom: 40px;
+   font-weight: 600;
+}
+
+li.dline{
+    line-height: 1;
 }
 
 /*view GetCommandList
 --------------------------------------------------*/
 .dropdown-row-0 {
     height: 370px;
-    width:730px;
+    width: 730px;
     background: #ebedf0;
     margin-right: 10px;
     margin-left: 10px;
@@ -214,7 +232,6 @@ a.navbar-brand img {
 .table tr th {
     text-align: center;
     vertical-align: middle;
-    /*width: 20%;*/
 }
 
 .table tr th {

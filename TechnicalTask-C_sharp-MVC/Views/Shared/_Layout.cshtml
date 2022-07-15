@@ -40,76 +40,98 @@
                     </div>
                 </div>
                 <div class="row margin-01">
-                    <div class="col-3 padding-0">
-                        <div class="sidebar">
-                            <ul class="list-unstyled components">
-                                <li>
-                                    <a href="#">
-                                        <img src="~/img/logoRes.png" title="core" alt="">
-                                        Клиенты
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="~/img/logoRes.png" title="core" alt="">
-                                        Пользователи
-                                    </a>
-                                </li>
+                    <div class="col-3">
+                        <div class="row sidebar-row">
+                            <div class="col-2 col-sidebar1">
+                                <ul class="list-unstyled components">
+                                    <li>
+                                        <a href="#">
+                                            <img src="~/img/logoRes.png" title="core" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="~/img/logoRes.png" title="core" alt="">
+                                        </a>
+                                    </li>
 
-                                <li>
-                                    <a href="#">
-                                        <img src="~/img/logoRes.png" title="core" alt="">
-                                        Терминалы
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="~/img/logoRes.png" title="core" alt="">
-                                        TID Банка
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="~/img/logoRes.png" title="core" alt="">
-                                        Транзакции
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="~/img/logoRes.png" title="core" alt="">
-                                        Логи терминалов
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="~/img/logoRes.png" title="core" alt="">
-                                        Кассы
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="~/img/logoRes.png" title="core" alt="" class="Last-img">
-                                        Привязать терминалы к клиенту списком
-                                    </a>
-                                </li>
-                            </ul>
+                                    <li>
+                                        <a href="#">
+                                            <img src="~/img/logoRes.png" title="core" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="~/img/logoRes.png" title="core" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="~/img/logoRes.png" title="core" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="~/img/logoRes.png" title="core" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="last-img">
+                                        <a href="#">
+                                            <img src="~/img/logoRes.png" title="core" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="~/img/logoRes.png" title="core" alt="" class="Last-img">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-10 col-sidebar2">
+                                <ul class="list-unstyled components">
+                                    <li>
+                                        <a>Клиенты</a>
+                                    </li>
+                                    <li>
+                                        <a>Пользователи</a>
+                                    </li>
+                                    <li>
+                                        <a>Терминалы</a>
+                                    </li>
+                                    <li>
+                                        <a>TID Банка</a>
+                                    </li>
+                                    <li>
+                                        <a>Транзакции</a>
+                                    </li>
+                                    <li>
+                                        <a>Логи терминалов</a>
+                                    </li>
+                                    <li>
+                                        <a>Кассы</a>
+                                    </li>
+                                    <li class="dline">
+                                        <a>Привязать терминалы к клиенту списком</a>                                       
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                        <div class="col-9 padding-01">
-                            <div class="title">
-                                <a>Отправка команды на терминал</a>
-                            </div>
-                            <main role="main" class="pb-3">
-                                @RenderBody()
-                            </main>
+                    <div class="col-9 padding-01">
+                        <div class="title">
+                            <a>Отправка команды на терминал</a>
                         </div>
+                        <main role="main" class="pb-3">
+                            @RenderBody()
+                        </main>
                     </div>
                 </div>
+            </div>
         </nav>
-    </header> 
-        <script src="~/lib/jquery/dist/jquery.min.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="~/js/site.js" asp-append-version="true"></script>
-        @RenderSection("Scripts", required: false)
+    </header>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
 </body>
 </html>
