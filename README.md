@@ -1,20 +1,18 @@
 # TechnicalTask-C_sharp-MVC
 ### Client-side C# MVC для платежного терминала по техзаданию работодателя: http://technical-task-c-sharp.somee.com
+Приложение содержит DbInitializer.cs для создания базы данных при первом запуске приложения.
 В соответствии с ТЗ только команды "Перезагрпузить терминал" и "Стартовый кредит" отправляют запросы к API и рендерят страницы.
 Задание выполнено за две недели.
 ___
 Stack:
++ ASP.NET Core 3.1 MVC
++ IHttpClientFactory
++ Mvc.Razor
++ Newtonsoft.Json
 + MS SQL Server
-+ TSQL
-+ ASP.NET Core 3.1
-Web API
-Entity Framework Core
-N-tier architecture
-CORS
-Swashbuckle
-Data Transfer Object
-AutoMapper
-MemoryCache
++ Entity Framework Core
++ Data Transfer Object
+
 _____
 
 Видео, как должно работать выполненное задание:
