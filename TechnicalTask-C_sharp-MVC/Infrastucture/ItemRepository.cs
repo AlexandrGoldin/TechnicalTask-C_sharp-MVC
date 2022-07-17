@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using TechnicalTask_C_sharp_MVC.Intefaces;
+using TechnicalTask_C_sharp_MVC.RepositoryIntefaces;
 using TechnicalTask_C_sharp_MVC.MdelsDTO;
 
 namespace TechnicalTask_C_sharp_MVC.Infrastucture
@@ -20,8 +20,6 @@ namespace TechnicalTask_C_sharp_MVC.Infrastucture
             var orderedItem = itemList.OrderByDescending(i => i.Id);
 
             var itemRes = orderedItem.Take(6);
-
-            // get six item values
 
             return itemRes.ToList();
         }

@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using TechnicalTask_C_sharp_MVC.Models;
 using TechnicalTask_C_sharp_MVC.MdelsDTO;
-using TechnicalTask_C_sharp_MVC.Intefaces;
+using TechnicalTask_C_sharp_MVC.RepositoryIntefaces;
 
 namespace TechnicalTask_C_sharp_MVC.Controllers
 {
@@ -54,7 +54,6 @@ namespace TechnicalTask_C_sharp_MVC.Controllers
         [HttpGet]
         public async Task<IActionResult>  CreateCommand(DbCommandTypes dbCommandTypes)
         {
-            // if(id=2) return view RestartTerminal
             var httpClient = _clientFactory.CreateClient();
             var URL = $"http://178.57.218.210:198/commands/types?token=pdebbd1b-8aba-434f-9bf6-";
             var response = await httpClient.GetAsync(URL);
@@ -119,7 +118,6 @@ namespace TechnicalTask_C_sharp_MVC.Controllers
             using var httpResponseMessage =
            await httpClient.PostAsync(URL, httpContent);
 
-            //httpResponseMessage.EnsureSuccessStatusCode();
             if (!httpResponseMessage.IsSuccessStatusCode)
             {
                 return StatusCode(500, "Something Went Wrong! Error Occured");

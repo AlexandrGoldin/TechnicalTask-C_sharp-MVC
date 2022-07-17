@@ -5,7 +5,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using TechnicalTask_C_sharp_MVC.Infrastucture;
-using TechnicalTask_C_sharp_MVC.Intefaces;
+using TechnicalTask_C_sharp_MVC.RepositoryIntefaces;
 using TechnicalTask_C_sharp_MVC.Models;
 
 namespace TechnicalTask_C_sharp_MVC
