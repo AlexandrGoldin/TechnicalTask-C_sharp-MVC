@@ -13,5 +13,9 @@ _____
 Техзадание 1стр.
 
 ![ТЗ 1стр](https://user-images.githubusercontent.com/50864552/179406197-449d7c0c-78ea-48cd-a2f3-3bbe8a7a0ba0.PNG)
+_____
+Техзадание 2стр.
+
+![ТЗ 2стр](https://user-images.githubusercontent.com/50864552/179406878-0404af59-0f3d-47a2-8dff-1058629b1f45.PNG)
 
 
