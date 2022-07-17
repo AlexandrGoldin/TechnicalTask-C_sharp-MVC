@@ -3,6 +3,19 @@
 В соответствии с ТЗ только команды "Перезагрпузить терминал" и "Стартовый кредит" отправляют запросы к API и рендерят страницы.
 Задание выполнено за две недели.
 ___
+Stack:
++ MS SQL Server
++ TSQL
++ ASP.NET Core 3.1
+Web API
+Entity Framework Core
+N-tier architecture
+CORS
+Swashbuckle
+Data Transfer Object
+AutoMapper
+MemoryCache
+_____
 
 Видео, как должно работать выполненное задание:
 https://disk.yandex.ru/i/hpLK2JTXTjU9CA
